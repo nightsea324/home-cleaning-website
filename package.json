@@ -1,0 +1,51 @@
+{
+  "name": "home-cleaning-website",
+  "version": "1.0.0",
+  "description": "昕禾居家清潔官方網站",
+  "productName": "昕禾居家清潔",
+  "author": "NightSea <sweetmilkshake0324@gmail.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue ./",
+    "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "dev": "quasar dev",
+    "dev:ssg": "quasar ssg dev",
+    "build": "quasar build",
+    "build:ssg": "quasar ssg generate"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.4",
+    "core-js": "^3.31.1",
+    "pinia": "^2.0.11",
+    "quasar": "^2.8.0",
+    "vue": "^3.4.18",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.13.14",
+    "@quasar/app-webpack": "^3.9.2",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "prettier": "^2.5.1",
+    "quasar-app-extension-ssg": "^5.2.0",
+    "sass": "^1.77.8"
+  },
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
+  ],
+  "engines": {
+    "node": "^20 || ^18 || ^16",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}
