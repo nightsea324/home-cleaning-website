@@ -19,6 +19,7 @@ module.exports = configure(function (ctx) {
 
     build: {
       vueRouterMode: "history",
+      publicPath: "/home-cleaning-website/",
 
       chainWebpack(chain) {
         chain
