@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60" fill="none">
+  <!-- Logo B: 房子+葉子組合圖標 + 文字 -->
+  <!-- 房子輪廓 -->
+  <path d="M30 8 L8 28 L14 28 L14 50 L46 50 L46 28 L52 28 Z" fill="none" stroke="#1a7f5a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- 房子裡的葉子 -->
+  <path d="M30 24 C22 30, 22 40, 30 44 C38 40, 38 30, 30 24Z" fill="#1a7f5a" opacity="0.8"/>
+  <path d="M30 27 L30 42" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M26 33 L30 30" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M34 33 L30 30" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- 昕禾 粗體 -->
+  <text x="64" y="28" font-family="Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="26" font-weight="800" fill="#1a7f5a" letter-spacing="4">昕禾</text>
+  <!-- 生活 細體 + 底線 -->
+  <text x="64" y="50" font-family="Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="16" font-weight="400" fill="#666666" letter-spacing="6">生活事業</text>
+  <!-- 裝飾線 -->
+  <line x1="64" y1="33" x2="160" y2="33" stroke="#1a7f5a" stroke-width="1.5" opacity="0.3"/>
+</svg>

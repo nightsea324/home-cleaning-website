@@ -94,6 +94,9 @@
               <div class="column q-gutter-sm text-grey-4">
                 <div><q-icon name="mdi-map-marker" class="q-mr-sm" />台中市西屯區</div>
                 <div><q-icon name="mdi-clock" class="q-mr-sm" />週一至週日 09:00 - 21:00</div>
+                <a href="https://www.facebook.com/profile.php?id=61565276375462" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">
+                  <q-icon name="mdi-facebook" class="q-mr-sm" />Facebook 粉絲專頁
+                </a>
               </div>
             </div>
           </div>

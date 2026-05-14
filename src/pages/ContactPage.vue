@@ -131,13 +131,16 @@
               <q-card flat class="q-pa-lg bg-primary text-white" style="border-radius: 16px">
                 <div class="text-h5 text-weight-bold q-mb-lg">聯絡資訊</div>
                 <q-list dark>
-                  <q-item v-for="info in contactInfo" :key="info.label" class="q-px-none">
+                  <q-item v-for="info in contactInfo" :key="info.label" class="q-px-none" :clickable="!!info.link" :tag="info.link ? 'a' : 'div'" :href="info.link" target="_blank" rel="noopener">
                     <q-item-section avatar>
                       <q-avatar color="white" text-color="primary" :icon="info.icon" />
                     </q-item-section>
                     <q-item-section>
                       <q-item-label class="text-weight-bold">{{ info.label }}</q-item-label>
                       <q-item-label caption class="text-green-2">{{ info.value }}</q-item-label>
+                    </q-item-section>
+                    <q-item-section v-if="info.link" side>
+                      <q-icon name="mdi-open-in-new" color="green-2" size="16px" />
                     </q-item-section>
                   </q-item>
                 </q-list>
@@ -227,6 +230,7 @@ export default {
     const contactInfo = [
       { icon: "mdi-map-marker", label: "服務地區", value: "台中市西屯區" },
       { icon: "mdi-domain", label: "公司全名", value: "昕禾生活事業有限公司" },
+      { icon: "mdi-facebook", label: "Facebook", value: "昕禾生活事業", link: "https://www.facebook.com/profile.php?id=61565276375462" },
     ];
 
     const hours = [
