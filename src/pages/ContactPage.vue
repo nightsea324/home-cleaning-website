@@ -165,7 +165,7 @@
                   首次優惠
                 </div>
                 <p class="text-body2 text-grey-7 q-mb-sm" style="line-height: 1.8">
-                  首次預約即享 <strong class="text-accent text-h6">9 折</strong> 優惠！填寫表單或來電預約時告知即可。
+                  歡迎透過表單預約或直接聯繫我們，客製化服務方案滿足您的需求！
                 </p>
               </q-card>
             </div>
@@ -186,13 +186,13 @@ export default {
     const $q = useQuasar();
 
     useMeta({
-      title: "聯絡我們 - 昕禾居家清潔｜免費估價預約",
+      title: "聯絡我們 - 昕禾生活｜台中清潔服務預約",
       titleTemplate: "",
       meta: {
-        description: { name: "description", content: "立即預約昕禾居家清潔服務！免費專線 0800-123-456，線上預約表單，首次預約享9折優惠。台北市中山區南京東路一段100號。" },
-        keywords: { name: "keywords", content: "預約清潔,免費估價,清潔服務預約,台北清潔預約,昕禾聯絡方式" },
-        ogTitle: { property: "og:title", content: "聯絡我們 - 昕禾居家清潔" },
-        ogDescription: { property: "og:description", content: "填寫表單或直接來電，首次預約享9折優惠！" },
+        description: { name: "description", content: "立即預約昕禾生活清潔服務！線上預約表單，台中市西屯區，週一至週日 09:00-21:00 全時段服務。" },
+        keywords: { name: "keywords", content: "預約清潔,免費估價,台中清潔預約,西屯區清潔預約,昕禾生活聯絡" },
+        ogTitle: { property: "og:title", content: "聯絡我們 - 昕禾生活" },
+        ogDescription: { property: "og:description", content: "填寫表單或直接來電，讓專業團隊為您服務！" },
         ogType: { property: "og:type", content: "website" },
       },
     });
@@ -208,25 +208,29 @@ export default {
     });
 
     const serviceOptions = [
-      "日常清潔",
-      "深度清潔",
-      "搬遷清潔",
+      "居家清潔",
+      "收納管理",
+      "搬家清潔",
+      "裝潢清潔",
+      "空屋清潔",
+      "抽油煙機清洗",
       "辦公室清潔",
-      "冷氣清洗",
-      "裝潢後清潔",
+      "大掃除",
+      "廚房清潔",
+      "玻璃清潔",
+      "樓梯清潔",
+      "家事服務",
+      "老人照顧",
+      "特殊清潔",
     ];
 
     const contactInfo = [
-      { icon: "mdi-phone", label: "免費專線", value: "0800-123-456" },
-      { icon: "mdi-email", label: "電子郵件", value: "service@cleanhome.com.tw" },
-      { icon: "mdi-map-marker", label: "公司地址", value: "台北市中山區南京東路一段100號" },
-      { icon: "mdi-facebook", label: "Facebook", value: "facebook.com/cleanhome.tw" },
+      { icon: "mdi-map-marker", label: "服務地區", value: "台中市西屯區" },
+      { icon: "mdi-domain", label: "公司全名", value: "昕禾生活事業有限公司" },
     ];
 
     const hours = [
-      { day: "週一至週五", time: "08:00 - 20:00" },
-      { day: "週六", time: "09:00 - 18:00" },
-      { day: "週日", time: "公休", closed: true },
+      { day: "週一至週日", time: "09:00 - 21:00" },
     ];
 
     function onSubmit() {

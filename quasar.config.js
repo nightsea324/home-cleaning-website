@@ -68,9 +68,9 @@ module.exports = configure(function (ctx) {
           .use(ESLintPlugin, [{ extensions: ["js"] }]);
       },
       manifest: {
-        name: "昕禾居家清潔",
-        short_name: "昕禾居家清潔",
-        description: "昕禾居家清潔 - 專業居家清潔服務",
+        name: "昕禾生活",
+        short_name: "昕禾生活",
+        description: "昕禾生活 - 專業居家清潔服務",
         display: "standalone",
         orientation: "portrait",
         background_color: "#ffffff",

@@ -5,7 +5,7 @@
       <q-toolbar class="q-px-md" style="max-width: 1200px; margin: 0 auto">
         <q-btn flat no-caps to="/" class="text-primary text-weight-bold" style="font-size: 1.1rem">
           <q-icon name="mdi-leaf" class="q-mr-sm" />
-          昕禾居家清潔
+          昕禾生活
         </q-btn>
 
         <q-space />
@@ -42,7 +42,7 @@
       <q-list padding>
         <q-item-label header class="text-primary text-weight-bold text-h6">
           <q-icon name="mdi-leaf" class="q-mr-sm" />
-          昕禾居家清潔
+          昕禾生活
         </q-item-label>
         <q-separator class="q-mb-sm" />
         <q-item clickable v-ripple to="/" @click="drawer = false">
@@ -74,10 +74,10 @@
           <div class="row q-col-gutter-lg">
             <div class="col-12 col-md-4">
               <div class="text-h6 text-weight-bold q-mb-sm">
-                <q-icon name="mdi-leaf" class="q-mr-sm" />昕禾居家清潔
+                <q-icon name="mdi-leaf" class="q-mr-sm" />昕禾生活
               </div>
               <p class="text-grey-4" style="line-height: 1.8">
-                提供最專業的居家清潔服務，讓您的家煥然一新。我們用心對待每一個角落，給您最舒適的居住環境。
+                從日常清潔到深度整理，以專業與細心，讓每一個空間恢復潔淨與溫度。
               </p>
             </div>
             <div class="col-12 col-md-4">
@@ -92,16 +92,14 @@
             <div class="col-12 col-md-4">
               <div class="text-subtitle1 text-weight-bold q-mb-sm">聯絡資訊</div>
               <div class="column q-gutter-sm text-grey-4">
-                <div><q-icon name="mdi-phone" class="q-mr-sm" />0800-123-456</div>
-                <div><q-icon name="mdi-email" class="q-mr-sm" />service@cleanhome.com.tw</div>
-                <div><q-icon name="mdi-map-marker" class="q-mr-sm" />台北市中山區南京東路一段100號</div>
-                <div><q-icon name="mdi-clock" class="q-mr-sm" />週一至週六 08:00 - 20:00</div>
+                <div><q-icon name="mdi-map-marker" class="q-mr-sm" />台中市西屯區</div>
+                <div><q-icon name="mdi-clock" class="q-mr-sm" />週一至週日 09:00 - 21:00</div>
               </div>
             </div>
           </div>
           <q-separator dark class="q-my-md" />
           <div class="text-center text-grey-6 text-caption">
-            &copy; {{ new Date().getFullYear() }} 昕禾居家清潔 Clean Home. All Rights Reserved.
+            &copy; {{ new Date().getFullYear() }} 昕禾生活事業有限公司 All Rights Reserved.
           </div>
         </div>
       </footer>

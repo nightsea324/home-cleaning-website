@@ -11,7 +11,7 @@
             給您一個<br /><span class="text-primary">乾淨舒適</span>的家
           </h1>
           <p class="text-body1 text-grey-8 q-mb-lg" style="line-height: 1.8; max-width: 480px">
-            我們擁有專業的清潔團隊，採用環保清潔用品，為您打造一塵不染的居住空間。從日常清潔到深度清潔，滿足您的所有需求。
+            從日常清潔到深度整理，以專業與細心，讓每一個空間恢復潔淨與溫度。專業清潔人員、細節到位不馬虎、客製化服務方案。
           </p>
           <div class="row q-gutter-md">
             <q-btn
@@ -161,7 +161,7 @@
         <q-icon name="mdi-phone-ring" size="48px" class="q-mb-md" />
         <h2 class="text-h4 text-weight-bold q-mb-sm">準備好讓您的家煥然一新了嗎？</h2>
         <p class="text-body1 q-mb-lg" style="opacity: 0.9">
-          立即聯絡我們，獲得免費估價。首次預約享有 9 折優惠！
+          立即聯絡我們，獲得免費估價。讓專業團隊為您打造潔淨空間！
         </p>
         <div class="row justify-center q-gutter-md">
           <q-btn
@@ -197,29 +197,29 @@ export default {
   setup() {
     const $q = useQuasar();
     useMeta({
-      title: "昕禾居家清潔 - 專業居家清潔服務｜台北新北",
+      title: "昕禾生活 - 台中專業居家清潔服務｜收納整理｜裝潢清潔",
       titleTemplate: "",
       meta: {
-        description: { name: "description", content: "昕禾居家清潔提供日常清潔、深度清潔、搬遷清潔、辦公室清潔等專業服務。環保用品、透明價格、98%滿意度。立即預約免費估價！" },
-        keywords: { name: "keywords", content: "居家清潔,家事清潔,台北清潔,新北清潔,深度清潔,搬家清潔,辦公室清潔,清潔公司推薦,昕禾" },
-        ogTitle: { property: "og:title", content: "昕禾居家清潔 - 專業居家清潔服務" },
-        ogDescription: { property: "og:description", content: "專業清潔團隊，環保清潔用品，給您最舒適的居住環境。首次預約享9折優惠！" },
+        description: { name: "description", content: "昕禾生活事業有限公司提供居家清潔、收納管理、搬家清潔、裝潢清潔、辦公室清潔等專業服務。台中市西屯區，週一至週日全時段服務。" },
+        keywords: { name: "keywords", content: "台中居家清潔,台中清潔公司,西屯區清潔,搬家清潔,裝潢清潔,辦公室清潔,收納管理,大掃除,昕禾生活" },
+        ogTitle: { property: "og:title", content: "昕禾生活 - 台中專業居家清潔服務" },
+        ogDescription: { property: "og:description", content: "從日常清潔到深度整理，以專業與細心，讓每一個空間恢復潔淨與溫度。" },
         ogType: { property: "og:type", content: "website" },
       },
     });
 
     const services = [
-      { icon: "mdi-broom", title: "日常清潔", desc: "定期維護居家整潔，讓您每天回到乾淨的家" },
-      { icon: "mdi-spray-bottle", title: "深度清潔", desc: "徹底清潔死角與頑固汙垢，還原居家原貌" },
-      { icon: "mdi-sofa", title: "搬遷清潔", desc: "入住前後的全面清潔，讓新家完美迎接您" },
-      { icon: "mdi-office-building", title: "辦公清潔", desc: "維持辦公環境整潔，提升工作效率與形象" },
+      { icon: "mdi-broom", title: "居家清潔", desc: "日常居家環境維護，讓您回到乾淨舒適的家" },
+      { icon: "mdi-spray-bottle", title: "大掃除", desc: "深度清潔每個角落，還原居家原本面貌" },
+      { icon: "mdi-sofa", title: "搬家清潔", desc: "搬遷前後全面清潔，安心入住新空間" },
+      { icon: "mdi-office-building", title: "辦公室清潔", desc: "維持專業辦公環境，提升工作效率與形象" },
     ];
 
     const reasons = [
-      { icon: "mdi-shield-check", title: "專業認證團隊", desc: "所有清潔人員均經過嚴格培訓與背景調查，持有專業清潔認證" },
-      { icon: "mdi-leaf", title: "環保清潔用品", desc: "全面採用環保、無毒清潔用品，對家人與寵物安全無害" },
-      { icon: "mdi-clock-check", title: "準時可靠", desc: "嚴格遵守預約時間，服務完成後進行品質檢查確保滿意" },
-      { icon: "mdi-cash-check", title: "透明價格", desc: "明確報價無隱藏費用，提供免費估價與客製化方案" },
+      { icon: "mdi-shield-check", title: "專業清潔人員", desc: "經過嚴格培訓的清潔團隊，確保每次服務都達到高品質標準" },
+      { icon: "mdi-magnify", title: "細節到位不馬虎", desc: "注重每一個細節，從看得到的地方到容易忽略的角落，絕不馬虎" },
+      { icon: "mdi-clipboard-check", title: "客製化服務方案", desc: "根據您的需求量身打造清潔方案，滿足不同空間與預算的需求" },
+      { icon: "mdi-clock-check", title: "彈性服務時間", desc: "週一至週日 09:00-21:00 全時段服務，配合您的作息安排" },
     ];
 
     const stats = [
@@ -230,9 +230,9 @@ export default {
     ];
 
     const reviews = [
-      { name: "陳小姐", area: "台北市大安區", text: "清潔人員非常專業細心，連廚房油煙機都清得亮晶晶。以後固定找他們了！" },
-      { name: "林先生", area: "新北市板橋區", text: "搬新家前請他們來做深度清潔，效果超乎預期。價格也很合理，大力推薦！" },
-      { name: "王太太", area: "台北市信義區", text: "每個月固定請他們來打掃，服務品質一直很穩定。客服回覆也很即時，非常滿意。" },
+      { name: "陳小姐", area: "台中市西屯區", text: "清潔人員非常專業細心，連廚房油煙機都清得亮晶晶。以後固定找他們了！" },
+      { name: "林先生", area: "台中市北屯區", text: "搬新家前請他們來做深度清潔，效果超乎預期。價格也很合理，大力推薦！" },
+      { name: "王太太", area: "台中市南屯區", text: "每個月固定請他們來打掃，服務品質一直很穩定。客服回覆也很即時，非常滿意。" },
     ];
 
     return { $q, services, reasons, stats, reviews };
