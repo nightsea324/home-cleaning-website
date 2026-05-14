@@ -17,20 +17,20 @@
           <div class="col-12 col-md-6">
             <div class="section-title">我們的故事</div>
             <p class="text-body1 text-grey-8" style="line-height: 2">
-  「昕禾生活事業有限公司」成立至今，創辦人因深感都市人忙碌的生活中，維持居家整潔是一大挑戰，因此創立了這個品牌。
+              「昕」象徵清晨的光，代表嶄新與希望；「禾」象徵穩定與豐盛，寓意用心耕耘每一個細節。昕禾生活的創辦人深感都市人忙碌的生活中，維持居家整潔是一大挑戰，因此創立了這個品牌。
             </p>
             <p class="text-body1 text-grey-8" style="line-height: 2">
               我們堅信，一個乾淨舒適的家是幸福生活的基礎。從最初的三人團隊，到如今超過 50 位專業清潔人員，
               我們始終秉持著「用心服務，乾淨如新」的理念，服務超過 5,000 個家庭。
             </p>
             <p class="text-body1 text-grey-8" style="line-height: 2">
-              我們不只是打掃，更是在為每位客戶打造一個舒適的生活空間。
+              我們不只是打掃，更是在為每位客戶打造一個嶄新、舒適的生活空間。
             </p>
           </div>
           <div class="col-12 col-md-6 flex flex-center">
             <div class="bg-green-1 full-width q-pa-xl rounded-borders text-center" style="border-radius: 24px">
               <q-icon name="mdi-heart-multiple" size="120px" color="primary" style="opacity: 0.5" />
-              <div class="text-h5 text-weight-bold text-primary q-mt-md">以專業與細心，恢復潔淨與溫度</div>
+              <div class="text-h5 text-weight-bold text-primary q-mt-md">如晨光般嶄新，用心耕耘每一個細節</div>
             </div>
           </div>
         </div>
@@ -111,7 +111,7 @@ export default {
       title: "關於我們 - 昕禾生活事業有限公司｜台中清潔",
       titleTemplate: "",
       meta: {
-        description: { name: "description", content: "昕禾生活事業有限公司，從日常清潔到深度整理，以專業與細心，讓每一個空間恢復潔淨與溫度。台中市西屯區在地服務。" },
+        description: { name: "description", content: "「昕」象徵清晨的光，代表嶄新與希望；「禾」象徵穩定與豐盛，寓意用心耕耘每一個細節。昕禾生活事業有限公司，台中市西屯區在地清潔服務。" },
         keywords: { name: "keywords", content: "昕禾生活,台中清潔公司,西屯區清潔,專業清潔團隊,昕禾生活事業" },
         ogTitle: { property: "og:title", content: "關於我們 - 昕禾生活" },
         ogDescription: { property: "og:description", content: "用心經營每一次服務，讓您安心將家託付給我們。" },

@@ -5,7 +5,7 @@
       <div style="max-width: 800px; margin: 0 auto">
         <h1 class="text-h3 text-weight-bold q-mb-sm" style="color: #2c3e50">聯絡我們</h1>
         <p class="text-body1 text-grey-7">
-          填寫表單或直接來電，我們將在最短時間內回覆您
+          歡迎透過電話或 LINE 與我們聯繫，將有專人為您服務
         </p>
       </div>
     </section>
@@ -14,114 +14,41 @@
     <section class="q-pa-xl">
       <div style="max-width: 1200px; margin: 0 auto">
         <div class="row q-col-gutter-xl">
-          <!-- Contact Form -->
+          <!-- Contact CTA -->
           <div class="col-12 col-md-7">
             <q-card flat bordered class="q-pa-lg" style="border-radius: 16px">
-              <div class="text-h5 text-weight-bold q-mb-lg">預約清潔服務</div>
-              <q-form @submit="onSubmit" class="q-gutter-md">
-                <div class="row q-col-gutter-md">
-                  <div class="col-12 col-sm-6">
-                    <q-input
-                      v-model="form.name"
-                      label="您的姓名"
-                      outlined
-                      rounded
-                      :rules="[val => !!val || '請輸入姓名']"
-                    >
-                      <template v-slot:prepend>
-                        <q-icon name="mdi-account" />
-                      </template>
-                    </q-input>
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <q-input
-                      v-model="form.phone"
-                      label="聯絡電話"
-                      outlined
-                      rounded
-                      :rules="[val => !!val || '請輸入電話']"
-                    >
-                      <template v-slot:prepend>
-                        <q-icon name="mdi-phone" />
-                      </template>
-                    </q-input>
-                  </div>
-                </div>
-
-                <q-input
-                  v-model="form.email"
-                  label="電子郵件"
-                  type="email"
-                  outlined
-                  rounded
-                >
-                  <template v-slot:prepend>
-                    <q-icon name="mdi-email" />
-                  </template>
-                </q-input>
-
-                <q-input
-                  v-model="form.address"
-                  label="清潔地址"
-                  outlined
-                  rounded
-                  :rules="[val => !!val || '請輸入地址']"
-                >
-                  <template v-slot:prepend>
-                    <q-icon name="mdi-map-marker" />
-                  </template>
-                </q-input>
-
-                <q-select
-                  v-model="form.service"
-                  :options="serviceOptions"
-                  label="選擇服務類型"
-                  outlined
-                  rounded
-                  :rules="[val => !!val || '請選擇服務類型']"
-                >
-                  <template v-slot:prepend>
-                    <q-icon name="mdi-broom" />
-                  </template>
-                </q-select>
-
-                <q-input
-                  v-model="form.date"
-                  label="希望服務日期"
-                  outlined
-                  rounded
-                  type="date"
-                >
-                  <template v-slot:prepend>
-                    <q-icon name="mdi-calendar" />
-                  </template>
-                </q-input>
-
-                <q-input
-                  v-model="form.message"
-                  label="其他需求說明"
-                  type="textarea"
-                  outlined
-                  rounded
-                  rows="4"
-                >
-                  <template v-slot:prepend>
-                    <q-icon name="mdi-message-text" />
-                  </template>
-                </q-input>
-
+              <div class="text-h5 text-weight-bold q-mb-md">預約清潔服務</div>
+              <p class="text-body1 text-grey-7 q-mb-lg" style="line-height: 1.8">
+                如晨光般帶來嶄新希望，用心耕耘每一個細節。歡迎直接來電或透過 LINE 與我們聯繫，專人將為您提供免費估價與諮詢服務。
+              </p>
+              <div class="column q-gutter-md">
                 <q-btn
                   unelevated
                   no-caps
-                  label="送出預約"
-                  type="submit"
+                  label="LINE 聯絡我們"
+                  color="positive"
+                  size="lg"
+                  rounded
+                  class="full-width"
+                  icon="mdi-chat"
+                  :href="lineLink"
+                  target="_blank"
+                  rel="noopener"
+                  type="a"
+                />
+                <q-btn
+                  outline
+                  no-caps
+                  label="撥打電話聯絡"
                   color="primary"
                   size="lg"
                   rounded
                   class="full-width"
-                  icon-right="mdi-send"
+                  icon="mdi-phone"
+                  href="tel:0967193868"
+                  type="a"
                 />
-              </q-form>
+              </div>
             </q-card>
           </div>
 
@@ -168,7 +95,7 @@
                   首次優惠
                 </div>
                 <p class="text-body2 text-grey-7 q-mb-sm" style="line-height: 1.8">
-                  歡迎透過表單預約或直接聯繫我們，客製化服務方案滿足您的需求！
+                  歡迎直接聯繫我們，客製化服務方案滿足您的需求！
                 </p>
               </q-card>
             </div>
@@ -180,52 +107,24 @@
 </template>
 
 <script>
-import { ref } from "vue";
-import { useQuasar, useMeta } from "quasar";
+import { useMeta } from "quasar";
 
 export default {
   name: "ContactPage",
   setup() {
-    const $q = useQuasar();
-
     useMeta({
-      title: "聯絡我們 - 昕禾生活｜台中清潔服務預約",
+      title: "聯絡我們 - 昕禾生活｜台中清潔服務",
       titleTemplate: "",
       meta: {
-        description: { name: "description", content: "立即預約昕禾生活清潔服務！線上預約表單，台中市西屯區，週一至週日 09:00-21:00 全時段服務。" },
-        keywords: { name: "keywords", content: "預約清潔,免費估價,台中清潔預約,西屯區清潔預約,昕禾生活聯絡" },
+        description: { name: "description", content: "聯絡昕禾生活清潔服務！透過電話或 LINE 直接與我們聯繫，台中市西屯區，週一至週日 09:00-21:00 全時段服務。" },
+        keywords: { name: "keywords", content: "聯絡清潔,免費估價,台中清潔,西屯區清潔,昕禾生活聯絡" },
         ogTitle: { property: "og:title", content: "聯絡我們 - 昕禾生活" },
-        ogDescription: { property: "og:description", content: "填寫表單或直接來電，讓專業團隊為您服務！" },
+        ogDescription: { property: "og:description", content: "透過電話或 LINE 直接聯繫，讓專業團隊為您服務！" },
         ogType: { property: "og:type", content: "website" },
       },
     });
 
-    const form = ref({
-      name: "",
-      phone: "",
-      email: "",
-      address: "",
-      service: null,
-      date: "",
-      message: "",
-    });
-
-    const serviceOptions = [
-      "居家清潔",
-      "收納管理",
-      "搬家清潔",
-      "裝潢清潔",
-      "空屋清潔",
-      "抽油煙機清洗",
-      "辦公室清潔",
-      "大掃除",
-      "廚房清潔",
-      "玻璃清潔",
-      "樓梯清潔",
-      "家事服務",
-      "老人照顧",
-      "特殊清潔",
-    ];
+    const lineLink = "https://lin.ee/z05H7OH";
 
     const contactInfo = [
       { icon: "mdi-map-marker", label: "服務地區", value: "台中市西屯區" },
@@ -237,25 +136,7 @@ export default {
       { day: "週一至週日", time: "09:00 - 21:00" },
     ];
 
-    function onSubmit() {
-      $q.notify({
-        type: "positive",
-        message: "預約表單已送出！我們將盡快與您聯繫。",
-        position: "top",
-        timeout: 3000,
-      });
-      form.value = {
-        name: "",
-        phone: "",
-        email: "",
-        address: "",
-        service: null,
-        date: "",
-        message: "",
-      };
-    }
-
-    return { form, serviceOptions, contactInfo, hours, onSubmit };
+    return { lineLink, contactInfo, hours };
   },
 };
 </script>

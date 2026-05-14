@@ -77,7 +77,7 @@
                 <q-icon name="mdi-leaf" class="q-mr-sm" />昕禾生活
               </div>
               <p class="text-grey-4" style="line-height: 1.8">
-                從日常清潔到深度整理，以專業與細心，讓每一個空間恢復潔淨與溫度。
+                「昕」象徵清晨的光，代表嶄新與希望；「禾」象徵穩定與豐盛。用心耕耘每一個細節，讓每個空間恢復潔淨與溫度。
               </p>
             </div>
             <div class="col-12 col-md-4">
@@ -93,6 +93,9 @@
               <div class="text-subtitle1 text-weight-bold q-mb-sm">聯絡資訊</div>
               <div class="column q-gutter-sm text-grey-4">
                 <div><q-icon name="mdi-map-marker" class="q-mr-sm" />台中市西屯區</div>
+                <a href="tel:0967193868" style="color: inherit; text-decoration: none;">
+                  <q-icon name="mdi-phone" class="q-mr-sm" />0967-193-868
+                </a>
                 <div><q-icon name="mdi-clock" class="q-mr-sm" />週一至週日 09:00 - 21:00</div>
                 <a href="https://www.facebook.com/profile.php?id=61565276375462" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">
                   <q-icon name="mdi-facebook" class="q-mr-sm" />Facebook 粉絲專頁

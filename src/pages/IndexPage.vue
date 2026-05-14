@@ -11,7 +11,7 @@
             給您一個<br /><span class="text-primary">乾淨舒適</span>的家
           </h1>
           <p class="text-body1 text-grey-8 q-mb-lg" style="line-height: 1.8; max-width: 480px">
-            從日常清潔到深度整理，以專業與細心，讓每一個空間恢復潔淨與溫度。專業清潔人員、細節到位不馬虎、客製化服務方案。
+            「昕」是清晨的光，代表嶄新與希望；「禾」是穩定與豐盛，寓意用心耕耘每一個細節。從日常清潔到深度整理，讓每一個空間恢復潔淨與溫度。
           </p>
           <div class="row q-gutter-md">
             <q-btn
@@ -177,11 +177,13 @@
           <q-btn
             outline
             no-caps
-            label="撥打 0800-123-456"
+            label="撥打 0967-193-868"
             color="white"
             size="lg"
             rounded
             icon="mdi-phone"
+            href="tel:0967193868"
+            type="a"
           />
         </div>
       </div>
@@ -203,7 +205,7 @@ export default {
         description: { name: "description", content: "昕禾生活事業有限公司提供居家清潔、收納管理、搬家清潔、裝潢清潔、辦公室清潔等專業服務。台中市西屯區，週一至週日全時段服務。" },
         keywords: { name: "keywords", content: "台中居家清潔,台中清潔公司,西屯區清潔,搬家清潔,裝潢清潔,辦公室清潔,收納管理,大掃除,昕禾生活" },
         ogTitle: { property: "og:title", content: "昕禾生活 - 台中專業居家清潔服務" },
-        ogDescription: { property: "og:description", content: "從日常清潔到深度整理，以專業與細心，讓每一個空間恢復潔淨與溫度。" },
+        ogDescription: { property: "og:description", content: "「昕」代表嶄新與希望，「禾」寓意用心耕耘每一個細節。從日常清潔到深度整理，讓每個空間恢復潔淨與溫度。" },
         ogType: { property: "og:type", content: "website" },
       },
     });
