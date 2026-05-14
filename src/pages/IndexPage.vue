@@ -19,7 +19,7 @@
               no-caps
               label="免費估價"
               color="primary"
-              size="lg"
+              :size="$q.screen.lt.sm ? 'md' : 'lg'"
               rounded
               to="/contact"
               icon-right="mdi-arrow-right"
@@ -29,7 +29,7 @@
               no-caps
               label="了解服務"
               color="primary"
-              size="lg"
+              :size="$q.screen.lt.sm ? 'md' : 'lg'"
               rounded
               to="/services"
             />
@@ -190,11 +190,12 @@
 </template>
 
 <script>
-import { useMeta } from "quasar";
+import { useMeta, useQuasar } from "quasar";
 
 export default {
   name: "IndexPage",
   setup() {
+    const $q = useQuasar();
     useMeta({
       title: "昕禾居家清潔 - 專業居家清潔服務｜台北新北",
       titleTemplate: "",
@@ -234,7 +235,7 @@ export default {
       { name: "王太太", area: "台北市信義區", text: "每個月固定請他們來打掃，服務品質一直很穩定。客服回覆也很即時，非常滿意。" },
     ];
 
-    return { services, reasons, stats, reviews };
+    return { $q, services, reasons, stats, reviews };
   },
 };
 </script>

@@ -1,9 +1,9 @@
 <template>
-  <q-layout view="hHh lpR fFf">
+  <q-layout view="hHh lpr lFr">
     <!-- Header -->
     <q-header class="bg-white text-dark" bordered>
       <q-toolbar class="q-px-md" style="max-width: 1200px; margin: 0 auto">
-        <q-btn flat no-caps to="/" class="text-primary text-h6 text-weight-bold">
+        <q-btn flat no-caps to="/" class="text-primary text-weight-bold" style="font-size: 1.1rem">
           <q-icon name="mdi-leaf" class="q-mr-sm" />
           昕禾居家清潔
         </q-btn>
@@ -67,45 +67,45 @@
     <!-- Page Content -->
     <q-page-container>
       <router-view />
-    </q-page-container>
 
-    <!-- Footer -->
-    <q-footer class="bg-dark text-white q-pa-lg">
-      <div style="max-width: 1200px; margin: 0 auto">
-        <div class="row q-col-gutter-lg">
-          <div class="col-12 col-md-4">
-            <div class="text-h6 text-weight-bold q-mb-sm">
-              <q-icon name="mdi-leaf" class="q-mr-sm" />昕禾居家清潔
+      <!-- Footer - 置底，不浮動 -->
+      <footer class="bg-dark text-white q-pa-lg">
+        <div style="max-width: 1200px; margin: 0 auto">
+          <div class="row q-col-gutter-lg">
+            <div class="col-12 col-md-4">
+              <div class="text-h6 text-weight-bold q-mb-sm">
+                <q-icon name="mdi-leaf" class="q-mr-sm" />昕禾居家清潔
+              </div>
+              <p class="text-grey-4" style="line-height: 1.8">
+                提供最專業的居家清潔服務，讓您的家煥然一新。我們用心對待每一個角落，給您最舒適的居住環境。
+              </p>
             </div>
-            <p class="text-grey-4" style="line-height: 1.8">
-              提供最專業的居家清潔服務，讓您的家煥然一新。我們用心對待每一個角落，給您最舒適的居住環境。
-            </p>
+            <div class="col-12 col-md-4">
+              <div class="text-subtitle1 text-weight-bold q-mb-sm">快速連結</div>
+              <div class="column q-gutter-xs">
+                <q-btn flat no-caps label="首頁" to="/" color="grey-4" align="left" dense />
+                <q-btn flat no-caps label="服務項目" to="/services" color="grey-4" align="left" dense />
+                <q-btn flat no-caps label="關於我們" to="/about" color="grey-4" align="left" dense />
+                <q-btn flat no-caps label="立即預約" to="/contact" color="grey-4" align="left" dense />
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="text-subtitle1 text-weight-bold q-mb-sm">聯絡資訊</div>
+              <div class="column q-gutter-sm text-grey-4">
+                <div><q-icon name="mdi-phone" class="q-mr-sm" />0800-123-456</div>
+                <div><q-icon name="mdi-email" class="q-mr-sm" />service@cleanhome.com.tw</div>
+                <div><q-icon name="mdi-map-marker" class="q-mr-sm" />台北市中山區南京東路一段100號</div>
+                <div><q-icon name="mdi-clock" class="q-mr-sm" />週一至週六 08:00 - 20:00</div>
+              </div>
+            </div>
           </div>
-          <div class="col-12 col-md-4">
-            <div class="text-subtitle1 text-weight-bold q-mb-sm">快速連結</div>
-            <div class="column q-gutter-xs">
-              <q-btn flat no-caps label="首頁" to="/" color="grey-4" align="left" dense />
-              <q-btn flat no-caps label="服務項目" to="/services" color="grey-4" align="left" dense />
-              <q-btn flat no-caps label="關於我們" to="/about" color="grey-4" align="left" dense />
-              <q-btn flat no-caps label="立即預約" to="/contact" color="grey-4" align="left" dense />
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="text-subtitle1 text-weight-bold q-mb-sm">聯絡資訊</div>
-            <div class="column q-gutter-sm text-grey-4">
-              <div><q-icon name="mdi-phone" class="q-mr-sm" />0800-123-456</div>
-              <div><q-icon name="mdi-email" class="q-mr-sm" />service@cleanhome.com.tw</div>
-              <div><q-icon name="mdi-map-marker" class="q-mr-sm" />台北市中山區南京東路一段100號</div>
-              <div><q-icon name="mdi-clock" class="q-mr-sm" />週一至週六 08:00 - 20:00</div>
-            </div>
+          <q-separator dark class="q-my-md" />
+          <div class="text-center text-grey-6 text-caption">
+            &copy; {{ new Date().getFullYear() }} 昕禾居家清潔 Clean Home. All Rights Reserved.
           </div>
         </div>
-        <q-separator dark class="q-my-md" />
-        <div class="text-center text-grey-6 text-caption">
-          &copy; {{ new Date().getFullYear() }} 昕禾居家清潔 Clean Home. All Rights Reserved.
-        </div>
-      </div>
-    </q-footer>
+      </footer>
+    </q-page-container>
   </q-layout>
 </template>
 

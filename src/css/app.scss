@@ -81,3 +81,42 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+// Mobile responsive
+@media (max-width: 599px) {
+  .hero-section {
+    min-height: auto;
+    padding: 48px 0 32px;
+
+    h1 {
+      font-size: 1.75rem !important;
+    }
+
+    .text-h4 {
+      font-size: 1.5rem !important;
+    }
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .q-pa-xl {
+    padding: 32px 16px !important;
+  }
+
+  .feature-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .cta-section {
+    h2 {
+      font-size: 1.3rem !important;
+    }
+  }
+}
